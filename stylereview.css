@@ -1,0 +1,151 @@
+body {
+    background-color: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 25px
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.dashed {
+         outline-style: dashed;
+         outline-width: medium;
+    
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+article {
+ flex: 100
+}
+
+ul {
+    list-style-type: none;
+    margin: 100;
+    padding: 400;
+    overflow: hidden; /* Enable scrolling if the sidenav has too much content */
+}
+
+
+ul a {
+    display: block;
+    color: #000;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    /*display: inline;*/
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+li .active {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+}
+/*
+this for the mouse put on it the gray one
+*/
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.item1 { grid-area: lefthead;
+  background-color: rgba(216, 251, 120, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item2 { grid-area: header;
+  background-color: rgba(245, 225, 50, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item3 { grid-area: righthead;
+  background-color: rgba(251, 120, 216, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item4 { grid-area: left;
+  background-color: rgba(251, 120, 216, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item5 { grid-area: main; 
+  background-color: rgba(216, 251, 120, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item6 { grid-area: right;
+  background-color: rgba(245, 225, 50, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+
+.item7 { grid-area: leftfooter;
+  background-color: rgba(216, 251, 120, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item8 { grid-area: footer;
+  background-color: rgba(245, 225, 50, 0.1);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+.item9 { grid-area: rightfooter;
+  background-color: rgba(251, 120, 216, 0.1);
+  text-align: center;
+  padding:100px 0;
+  font-size: 30px;
+}
+.item10 { grid-area: bottomfooter;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1px 0;
+  font-size: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'lefthead lefthead header header righthead righthead'
+    'left left main main right right'
+    'leftfooter leftfooter footer footer rightfooter rightfooter'
+    'bottomfooter bottomfooter bottomfooter bottomfooter bottomfooter bottomfooter';
+  grid-gap: 20px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.gallery{
+  color: gray;
+  font-size: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.review{
+  color: gray;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+}
